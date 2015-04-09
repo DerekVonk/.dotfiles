@@ -14,7 +14,7 @@ public class Cijfer {
     private int cijfer;
     
     public Cijfer() {
-        
+        this.cijfer = 0;
     }
 
     public int getCijfer() {
@@ -25,10 +25,12 @@ public class Cijfer {
         this.cijfer = cijfer;
     }
     
-    /**
-     *
-     */
     public int volgende() {
-        return 0;
+        cijfer++;
+        // check eerst dat currentLetter < alpha.length
+        if (cijfer > 9) {
+            cijfer = 0;
+        }
+        return cijfer;
     }
 }

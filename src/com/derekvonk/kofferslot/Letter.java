@@ -12,13 +12,9 @@ package com.derekvonk.kofferslot;
 public class Letter {
     
     private char letter;
-    private String[] alpha = {"A","B","C"};
-    private int currentLetter =0;
-    
-        
-    
+
     public Letter() {
-        
+       this.letter = 'A';
     }
 
     public char getLetter() {
@@ -29,12 +25,17 @@ public class Letter {
         this.letter = letter;
     }
     
-    public String volgende() {
-        currentLetter++;
-        //maar check eerst dat currentLetter < alpha.length
-        return alpha[currentLetter];
-        
+    public char volgende() {
+        letter++;
+        if (letter == 'Z') {
+            letter = 'A';
+        }
+        return letter;
     }
     
+    @Override
+    public String toString() {
+        return Character.toString(getLetter());
+    }
 }
 
