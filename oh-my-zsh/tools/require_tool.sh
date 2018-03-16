@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 __require_tool_version_compare ()
 {
   (
