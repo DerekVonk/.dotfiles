@@ -41,6 +41,22 @@ make the sh scripts in tools directory executable:
 $ find /{user}/.dotfiles/oh-my-zsh/tools -type f -iname "*.sh" -exec chmod +x {} \;
 ```
 
+# for Spaceship theme:
+
+Clone this repo:
+
+```
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+```
+
+Symlink spaceship.zsh-theme to your oh-my-zsh custom themes directory:
+
+```
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
+
+# Finally
+
 Copy this .zshrc file to your home directory
 ```
 $ cp /{user}/.dotfiles/oh-my-zsh/.zshrc ~/.zshrc
