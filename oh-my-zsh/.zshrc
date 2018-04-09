@@ -92,4 +92,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# alias idea="/usr/local/bin/idea" @TODO this only works if the commandline tool script has been moved to this location
 eval $(thefuck --alias)
